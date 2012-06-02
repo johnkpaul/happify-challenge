@@ -1,0 +1,12 @@
+<dl>
+    <dt>Name</dt>
+    <dd><%= name %></dd>
+    <dt>Sequence</dt>
+    <dd><%= sequence %></dd>
+</dl>
+<form>
+    <% _.each(activities, function(activity) { %> 
+         <input type='checkbox'><span><%= activity.name %></span><br> 
+    <% }); %>
+</form>
+<a href="/">Back</a>
